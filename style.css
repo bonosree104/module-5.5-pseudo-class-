@@ -1,8 +1,25 @@
 h1{
-    color:aqua;
+    color:darkgoldenrod;
 }
 h1:hover{
     color: blueviolet;
     font-size:50px;
     background-color: crimson;
 }
+input:focus{
+    color:crimson;
+    font-size:50px;
+}
+li:first-child{
+    background-color: cyan;
+
+}
+li:last-child{
+    background-color: darkblue;
+}
+li:nth-child(2n){
+    color:darkgreen;
+}
+ a:visited{
+     color: crimson;
+ }
