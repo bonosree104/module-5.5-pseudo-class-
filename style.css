@@ -23,3 +23,64 @@ li:nth-child(2n){
  a:visited{
      color: crimson;
  }
+ h1::before{
+     content: "apple";
+     background-color: yellow;
+     color:aqua;
+     font-size: 20px;
+ }
+ h1::after{
+    content: "fruit";
+    background-color: yellow;
+    color:blueviolet;
+    font-size: 15px;
+}
+
+body {
+    counter-reset: section;                       /* Set a counter named 'section', and its initial value is 0. */
+  }
+  
+  p::before {
+    counter-increment: section;                   /* Increment the value of section counter by 1 */
+    content: "crush" counter(section) ": ";    /* Display the word 'Section ', the value of
+                                                     section counter, and a colon before the content
+                                                     of each h3 */
+  }
+  P::before{
+      content:"😍";
+  }
+  /*possition html*/
+  
+  .container {
+      background-color: chartreuse;
+  }
+  div{
+      width:100px;
+      height:100Px;
+  }
+  #first{
+      background-color: black;
+      position: relative;
+      left:10px;
+      top:0px;
+
+  }
+  #second{
+      background-color: crimson;
+      position: absolute;
+
+  }
+  #third{
+      background-color: cyan;
+      position: static;
+  }
+  /*specity*/
+  
+  .name{
+      color:green;
+  }
+  #highlight{
+      color:red;
+  }
+
+  
